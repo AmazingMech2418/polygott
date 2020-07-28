@@ -1,0 +1,32 @@
+name = "cobol"
+entrypoint = "main.cbl"
+extensions = [
+  "cbl",
+  "cob",
+  "cpy",
+  "cobc"
+]
+packages = [
+  "open-cobol"
+]
+setup = [
+]
+
+[compile]
+command = [
+  "cobc",
+  "-x",
+  "-free",
+  "main.cbl"
+]
+
+[run]
+command = [
+  "./main"
+]
+
+[tests]
+
+  [tests.hello]
+  code = "* To Be Added"
+  output = "To be added"
